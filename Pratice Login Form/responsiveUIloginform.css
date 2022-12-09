@@ -1,0 +1,132 @@
+
+/*importing the font*/
+@font-face{          
+    font-family: "Raleway-regular";
+    src:url(../project1/Fonts/Raleway-Regular.ttf)   /*source of font to be imported*/
+}
+/* .fab{
+    color: rgb(51, 51, 51);
+} */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    font-family: "Raleway-regular";
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./Screenshot\ \(8\).png);
+    background-size: cover;
+    /* using this even if the content is scrolled the 'background-image' for body remains fixed at its position */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 400px;
+    background: #ffffff;
+    /* min-height: 400px; */
+    min-height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(0,0,0,0.5);
+    padding: 2.5rem 1.9rem; 
+}
+
+.container .log-text{
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+    /* display: block; */
+}
+
+/* .container .log-social{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    margin-bottom: 1.9rem;
+}
+.container .log-social a{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgb(0,0,0,0.5);
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    background-color: rgb(70, 70, 70);
+    color: #ffffff;
+}
+.container .log-social a:hover{
+    background-color: rgb(32, 32, 32);
+}
+.container .log-social a i{
+    margin-right: 0.4rem;
+} */
+
+.container .log-form .inp-grp{
+    width: 100%;
+    height: 2.3rem;
+    margin-bottom: 1.8rem;
+}
+
+.container .log-form .inp-grp input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 0 1rem;
+    font-size: 1rem;
+    border-radius: 30px;
+}
+.container .log-form .inp-grp input:focus, .container .log-form .inp-grp input:valid{
+    /* :valid not understood */
+    border-color: #3498db;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+}
+
+/* for login button */
+.container .log-form .inp-grp:last-child{
+    width: 100%;
+    height: 2.8rem;
+    margin: 2.2rem 0 1.2rem 0;
+}
+.container .log-form .inp-grp .btn{
+    width: 65%;
+    height: 100%;
+    margin: auto;
+    display: block;
+    border-radius: 30px;
+    border: none;
+    background-color: #fa5656;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #02375f;
+    cursor: pointer; 
+    transition: all .3s; 
+}
+.container .log-form .inp-grp .btn:hover{
+    transform: translateY(-3px);
+    background-color: #f12a2a;
+    color: #021a2c;
+}
+
+@media (max-width:430px){
+    .container{
+        width: 300px;
+    }
+    .container .log-social{
+        display: block;
+    }
+    .container .log-social a{
+        display: block;
+    }
+}
